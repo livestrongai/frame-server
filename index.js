@@ -1,6 +1,7 @@
 // layered monolith architecture
 import './global.js'
 import express from 'express'
+
 import { configure } from './mod_00__configure.js'
 
 import { session_instance } from './mod_10_session.js'
@@ -10,11 +11,13 @@ import { detectErrors } from './mod_20_detectErrors.js'
 import { startServer } from './mod_20_server.js'
 import { startWebsocketServer } from './mod_20_websocket.js'
 
-// configure set 0 - configureShutdown, configureCORS, configureRedirect, JSON parsing, static file serving
+// configure set 0 - configureShutdown, configureCORS, configureRedirect
+//   configure JSON parsing, configure static file serving
 const app = express()
 configure(app)
 
 // configure set 1 - sessions, passport
+//   passport is currently the first use of internal dependency
 app.use(session_instance)
 app.use(passport.initialize())
 app.use(passport.session())
