@@ -1,4 +1,4 @@
-// modular monolith architecture
+// layered monolith architecture
 import './global.js'
 import express from 'express'
 import { configure } from './mod_00__configure.js'
@@ -10,8 +10,7 @@ import { detectErrors } from './mod_20_detectErrors.js'
 import { startServer } from './mod_20_server.js'
 import { startWebsocketServer } from './mod_20_websocket.js'
 
-// configure set 0 - configureShutdown, configureCORS, configureRedirect
-// JSON parsing, static file serving
+// configure set 0 - configureShutdown, configureCORS, configureRedirect, JSON parsing, static file serving
 const app = express()
 configure(app)
 
