@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "server": "node index.js",
+    "server-dev": "nodemond index.js"
+  },
+  "dependencies": {
+    "connect-mongo": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.4.1",
+    "openai": "^6.34.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "ws": "^8.20.0"
+  }
+}
