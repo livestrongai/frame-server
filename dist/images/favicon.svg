@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer Circle (Stroke = 10) -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#000000" stroke-width="10" />
+  
+  <!-- Uppercase 'L' (Thickness = 9) -->
+  <path d="M 39.5 26 V 74 H 68 V 65 H 48.5 V 26 Z" fill="#000000" />
+</svg>

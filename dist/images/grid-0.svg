@@ -1,0 +1,14 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="minorGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="0.5" fill="#DDDDDD" />
+    </pattern>
+
+    <pattern id="majorGrid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minorGrid)" />
+      <circle cx="5" cy="5" r="1.5" fill="#999999" />
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#majorGrid)" />
+</svg>
