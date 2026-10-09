@@ -1,6 +1,6 @@
 import { Router } from 'express';
 const router = Router();
-const OPENWEATHER_KEY = '78fd50d70e6c6a18205f31af5ff95107';
+const OPENWEATHER_KEY = process.env.OPENWEATHER;
 
 router.route('/air').get(async (req, res) => {
   const { lat, lon } = req.query;
